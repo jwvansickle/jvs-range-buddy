@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './app/local-or-prod-loader.ts',
   },
   basePath: '/jvs-range-buddy',
   assetPrefix: '/jvs-range-buddy/',
